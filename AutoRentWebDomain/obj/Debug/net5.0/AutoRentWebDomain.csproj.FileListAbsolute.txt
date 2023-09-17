@@ -1,0 +1,12 @@
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\bin\Debug\net5.0\AutoRentWebDomain.deps.json
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\bin\Debug\net5.0\AutoRentWebDomain.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\bin\Debug\net5.0\AutoRentWebDomain.pdb
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\AutoRentWebDomain.csproj.AssemblyReference.cache
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\AutoRentWebDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\AutoRentWebDomain.AssemblyInfoInputs.cache
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\AutoRentWebDomain.AssemblyInfo.cs
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\AutoRentWebDomain.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\AutoRentWebDomain.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\refint\AutoRentWebDomain.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\AutoRentWebDomain.pdb
+C:\Users\Пользователь\source\repos\AutoRentWeb\AutoRentWebDomain\obj\Debug\net5.0\ref\AutoRentWebDomain.dll

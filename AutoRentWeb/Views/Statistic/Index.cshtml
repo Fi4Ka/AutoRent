@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Статистика";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color:aqua">
+                    <h3 class="card-title">Количество аренд:</h3>
+                    <p class="card-text">@ViewBag.d1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color:bisque">
+                    <h3 class="card-title">Самая часто арендуемая техника:</h3>
+                    <p class="card-text">@ViewBag.d3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color:silver">
+                    <h3 class="card-title">Общая прибыль от аренд:</h3>
+                    <p class="card-text">@ViewBag.d2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

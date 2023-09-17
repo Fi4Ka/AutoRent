@@ -1,0 +1,17 @@
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\BLL.csproj.AssemblyReference.cache
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\BLL.AssemblyInfoInputs.cache
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\BLL.AssemblyInfo.cs
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\bin\Debug\net5.0\BLL.deps.json
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\bin\Debug\net5.0\BLL.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\bin\Debug\net5.0\BLL.pdb
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\bin\Debug\net5.0\AutoRentWeb.DAL.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\bin\Debug\net5.0\AutoRentWeb.DAL.pdb
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\BLL.csproj.CopyComplete
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\BLL.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\refint\BLL.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\BLL.pdb
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\obj\Debug\net5.0\ref\BLL.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\bin\Debug\net5.0\AutoRentWebDomain.dll
+C:\Users\Пользователь\source\repos\AutoRentWeb\BLL\bin\Debug\net5.0\AutoRentWebDomain.pdb

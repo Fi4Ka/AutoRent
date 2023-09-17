@@ -1,0 +1,27 @@
+﻿﻿
+@model AutoRentWebDomain.ViewModels.CompanyDelegate.CompanyDelegateViewModel
+
+<form id="formSaveUser" asp-action="Save" asp-controller="User" method="post">
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.Name" class="col-form-label text-black-50"></label>
+            <input asp-for="@Model.Name" type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.PhoneNumber" class="col-form-label text-black-50"></label>
+            <input asp-for="@Model.PhoneNumber" type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.CompanyName" class="col-form-label text-black-50"></label>
+            <input asp-for="@Model.CompanyName" type="text" class="form-control" />
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.Login" class="col-form-label text-black-50"></label>
+            <input asp-for="@Model.Login" type="text" class="form-control" />
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.Password" class="col-form-label text-black-50"></label>
+            <input asp-for="@Model.Password" type="password" class="form-control" />
+        </div>
+    </div>
+</form>

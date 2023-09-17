@@ -1,0 +1,111 @@
+﻿﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<div style="padding: 10px;"></div>
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="card col-md-12">
+        <div class="card-body">
+            <h5 class="card-title text-center">Добро пожаловать на сайт Мир Аренды</h5>
+            <p class="card-text">
+                На этом сайте вы сможете выбрать подходящую для вас технику, посмотреть её характеристики,а так же можете арендовать эту технику
+            </p>
+            <p class="card-text"><small class="text-muted">Крутой чел</small></p>
+        </div>
+    </div>
+
+    <div style="padding: 10px;"></div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="~/service/1.jpg" class="card-img-top card-image" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">БЕЛАЗЫ</h5>
+                        <p class="card-text">Карьерный самосвал грузоподъемностью 90 тонн разработан как машина высокого технического уровня нового класса грузоподъемности на шинах радиальной конструкции 27.00R49 с гидромеханической трансмиссией.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a asp-controller="Auto" asp-action="GetAutos" class="card-link">Список техники</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/service/2.jpg" class="card-img-top card-image" />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Эскаваторы</h5>
+                    <p class="card-text">
+                        Экскаваторы пришли на смену землекопам, механизировали их трудоемкий ручной труд и значительно повысили производительность земляных работ. Вместимость ковшей современных строительных экскаваторов может достигать 2—4 м.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-controller="Auto" asp-action="GetAutos" class="card-link">Список техники</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/service/3.jpg" class="card-img-top card-image" />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Дорожная техника</h5>
+                    <p class="card-text">машины, с помощью которых строят и обслуживают автотрассы. К этой группе относится разнообразная самоходная машинная техника: тягачи, краны, гусеничные и колесные асфальтоукладчики, катки.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-controller="Auto" asp-action="GetAutos" class="card-link">Список техники</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="card">
+        <div class="card-header">
+            Вы не авторизовались
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Для просмотра контента вы должны авторизоваться</p>
+            </blockquote>
+        </div>
+    </div>
+
+    <div style="padding: 10px;"></div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/service/1.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Недоступно</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Белазы</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/service/2.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Недоступно</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Эсковаторы</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/service/3.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title text-center">Недоступно</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Дорожная техника</small>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

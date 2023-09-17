@@ -1,0 +1,36 @@
+﻿@model BLL.DTO.AutoDTO
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div style="padding: 10px;"></div>
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="~/images/@Model.AvatarUrl"
+                 class="img-fluid rounded-start rounded" alt="@Model?.Name">
+        </div>
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title text-center">@Model?.Name</h5>
+                <p class="card-text"><b>Стоимость: </b>@Model?.Price $</p>
+                <p class="card-text"><b>Тип: </b>@Model?.TypeCar.Name</p>
+                <p class="card-text"><b>Представитель от компании: </b>@Model.CompanyDelegate.Name</p>
+                <p class="card-text"><b>Телефон: </b>@Model.CompanyDelegate.PhoneNumber</p>
+                <p class="card-text"><b>Компания: </b>@Model.CompanyDelegate.Company.Name</p>
+                <p class="card-text"><small class="text-muted">Год выпуска - @Model?.Year</small></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-body">
+                <p class="card-text"><b>Описание: </b>@Model?.Description</p>
+            </div>
+            @if (User.IsInRole("Пользователь"))
+            {
+                <a asp-controller="Order" asp-action="CreateOrder" asp-route-id="@Model.Id" class="btn btn-success">В корзину</a>
+            }
+        </div>
+    </div>
+</div>

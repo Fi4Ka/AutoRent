@@ -1,0 +1,31 @@
+﻿﻿
+@model AutoRentWebDomain.ViewModels.Order.OrderViewModel
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="~/images/@Model.AvatarUrl"
+             class="img-fluid rounded-start rounded">
+    </div>
+    <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Техника: @Model.AutoName</li>
+            <li class="list-group-item">Тип техники: @Model.TypeCar</li>
+            <li class="list-group-item">Год техники: @Model.Year</li>
+            <li class="list-group-item">Стоимость: @Model.Price</li>
+            <li class="list-group-item">Описание: @Model.Description</li>
+            <li class="list-group-item">Имя представителя от компании: @Model.CompanyDelegateName</li>
+            <li class="list-group-item">Телефон представителя: @Model.CompanyDelegateTelephone</li>
+            <li class="list-group-item">Компания: @Model.CompanyName</li>
+            <li class="list-group-item">Датана начала аренды: @Model.DateStart.ToLongDateString()</li>
+            <li class="list-group-item">Датана окончания аренды: @Model.DateEnd.ToLongDateString()</li>
+            <li class="list-group-item">Статус аренды: @Model.StatusOrder</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+           <li class="list-group-item">Имя арендатора: @Model.ArendatorName</li>
+            <li class="list-group-item">Адрес: @Model.ArendatorAdress</li>
+            <li class="list-group-item">Телефон: @Model.ArendatorPhoneNumber</li>
+       </ul> 
+    </div>
+</div>

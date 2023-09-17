@@ -1,0 +1,72 @@
+﻿
+
+@{
+    var textTitle = Model?.Id == 0 ? "Изменение данных" : "Добавление данных";
+} 
+﻿
+@model AutoRentWebDomain.ViewModels.Auto.AutoViewModel
+
+<form asp-action="Save" enctype="multipart/form-data" id="formSaveCar">
+    <div asp-validation-summary="All" style="font-size:23px; font-family:Impact, serif" class="text-danger text-center"></div>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.Name" class="col-form-label">Название</label>
+            <input type="text" class="form-control" asp-for="@Model.Name">
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.Price" class="col-form-label">Стоимость</label>
+            <input class="form-control" asp-for="@Model.Price" />
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.Year" class="col-form-label">Год выпуска</label>
+            <input type="text" class="form-control" asp-for="@Model.Year" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label asp-for="@Model.Description" class="col-form-label">Описание</label>
+            <textarea type="text" class="form-control" asp-for="@Model.Description"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.TypeCar" class="col-form-label">Тип техники</label>
+            <select asp-for="@Model.TypeCar" class="form-control" id="carTypeId"></select>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.AvatarUrl" class="col-form-label">Название картинки</label>
+            <input type="text" class="form-control" asp-for="@Model.AvatarUrl" />
+        </div>
+    </div>
+</form>
+
+<script src="~/lib/select2/js/select2.full.min.js"></script>
+<script>
+   $('#carTypeId').select2({
+      placeholder: "Выберите тип",
+      minimumInputLength: 0,
+      allowClear: true,
+      ajax: {
+           type: "POST",
+           url: "@Url.Action("GetTypes", "Auto")",
+           dataType: "json",
+           processResults: function (result) {
+               return {
+                   results: $.map(result, function (val, index) {
+                       return {
+                           id: index, 
+                           text: val
+                       };
+                   }),
+               };
+           }
+       }
+   });
+   
+</script>
+
+<style>
+    label {
+        color: black;
+    }
+</style>
